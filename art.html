@@ -88,57 +88,58 @@
                     </h2>
                     <hr>
                 </div>
-                <div class="col-md-4" style = "height: 350px">
-                    <img class="materialboxed" src="img/coast.jpg" alt="" width = "350">
-                    <div class = "t"> COAST <hr> <span>oil<span> </div>
+                <div class="col-md-4 "  >
+                  <div class = "t"> COAST <hr> <span>oil<span> </div>
+                    <img class="materialboxed" src="img/coast.jpg" alt="" >
+
                 </div>
-                <div class="col-md-4" style = "height: 350px">
-                    <img class="materialboxed" src="img/china.jpg" alt="" width = "350">
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/china.jpg" alt="">
                     <div class = "t"> CHINA <hr> <span>color pencil<span> </div>
                 </div>
-                <div class="col-md-4" style = "height: 350px">
+                <div class="col-md-4">
 
-                    <img class="materialboxed" src="img/nostalgia.jpg" alt="" width = "350">
+                    <img class="materialboxed" src="img/nostalgia.jpg" alt="" >
                     <div class = "t"> NOSTALGIA <hr> <span>oil<span> </div>
 
                 </div>
 
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/morningglory.jpg" alt="" width = "350">
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/morningglory.jpg" alt="">
                     <div class = "t"> MORNING <hr> <span>oil<span> </div>
                 </div>
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/sunflower.jpg" alt="" width = "350">
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/sunflower.jpg" alt="" >
                     <div class = "t"> SUNFLOWER <hr> <span>oil<span> </div>
                 </div>
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/peace.jpg" alt="" width = "350">
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/peace.jpg" alt="" >
                     <div class = "t"> PEACE <hr> <span>watercolor<span> </div>
                 </div>
 
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/octopus.jpg" alt="" width = "350">
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/octopus.jpg" alt="" >
                     <div class = "t"> OCTOPUS <hr> <span>color pencil<span> </div>
                 </div>
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/portrait.jpg" alt="" width = "350">
-                    <div class = "tt"> PORTRAIT PRACTICE <hr> <span>charcoal<span> </div>
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/portrait.jpg" alt="" >
+                    <div class = "t" style = "padding-top: 30%;"> PORTRAIT PRACTICE <hr> <span>charcoal<span> </div>
                 </div>
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/christmas.jpg" alt="" width = "350">
-                    <div class = "tt"> CHRISTMAS CHEER<hr> <span>oil<span> </div>
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/christmas.jpg" alt="" >
+                    <div class = "t" style = "padding-top: 30%;"> CHRISTMAS CHEER<hr> <span>oil<span> </div>
                 </div>
 
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/bullmarket.jpg" alt="" width = "350">
-                    <div class = "tt"> BULL MARKET <hr> <span>acrylic<span> </div>
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/bullmarket.jpg" alt="" >
+                    <div class = "t"> BULL MARKET <hr> <span>acrylic<span> </div>
                 </div>
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/alphi.jpg" alt="" width = "350">
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/alphi.jpg" alt="" >
                     <div class = "t"> ALPHI <hr> <span>digital<span> </div>
                 </div>
-                <div class="col-md-4" "height: 350px">
-                    <img class="materialboxed" src="img/owl.jpg" alt="" width = "350">
+                <div class="col-md-4" >
+                    <img class="materialboxed" src="img/owl.jpg" alt="" >
                     <div class = "t"> OWL <hr> <span>acrylic<span> </div>
                 </div>
 
@@ -179,6 +180,8 @@
         </div>
     </footer>
 
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -187,6 +190,20 @@
 
     <!-- Materialize JavaScript -->
     <script src="js/materialize.min.js"></script>
+
+    <script>
+    var cw = $('.col-md-4').width();
+    var ch = $('.col-md-4').height();
+    if (cw<350){
+    $('.t').css({'width':cw+'px'});
+    $('.t').css({'height':(ch-20)+'px'});
+    }
+    else{
+      $('.t').css({'width':'350px'});
+      $('.t').css({'height':'330px'});
+
+    }
+    </script>
 
 </body>
 

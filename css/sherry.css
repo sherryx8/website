@@ -289,6 +289,8 @@ a:focus {
 
   width: 350px;
   height: 350px;
+
+  max-width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   object-fit: cover;
@@ -308,6 +310,7 @@ a:focus {
   cursor: -webkit-zoom-out;
   cursor: zoom-out;
 
+  max-width: none;
   background-position: 0% 0%;
   object-fit: contain;
   object-position: center;
@@ -328,61 +331,40 @@ a:focus {
    pointer-events: none;
    position:absolute;
 
-   padding-top: 130px;
-   padding-left: 75px;
-   padding-right: 75px;
+   padding-top: 120px;
+   padding-left: 10%;
+   padding-right: 10%;
    text-align: center;
    vertical-align: middle;
    font-size: 26px;
    font-weight: 100;
    letter-spacing: 4px;
 
-   line-height: 0.5;
+   line-height: 1.1;
    display: none;
    color: #fff;
    top:0;
    margin-top: 20px;
-   width: 350px;
-   height: 330px;
+
    color: #fff;
 
  }
 
-.tt {
-  pointer-events: none;
-  position:absolute;
 
-  padding-top: 100px;
-  padding-left: 75px;
-  padding-right: 75px;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 26px;
-  font-weight: 100;
-  letter-spacing: 4px;
-
-  line-height: 1.1;
-  display: none;
-  color: #fff;
-  top:0;
-  margin-top: 20px;
-  width: 350px;
-  height: 330px;
-  color: #fff;
-
+ .t hr{
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width:50%;
 }
- .tt hr{
-   margin-top: 0.5em;
-   margin-bottom: 0.5em;
- }
 
- .col-md-4 .t span, .col-md-4 .tt span{
+
+ .col-md-4 .t span{
    font-size: 18px;
    text-align: center;
    /*letter-spacing: 12px;*/
  }
 
-.col-md-4:hover .t, .col-md-4:hover .tt{
+.col-md-4:hover .t{
   display: inline;
     background: rgba(0, 0, 0, .2);
   z-index: 1;
